@@ -1,0 +1,396 @@
+/* Navbar section */
+
+
+.topnav {
+    overflow: hidden;
+    background-color: rgb(100, 84, 100);
+
+}
+
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topnav {
+    font-family: math;
+}
+
+
+.topnav a:hover {
+    background-color: #fff9f9;
+    color: rgb(26, 25, 25);
+}
+
+.active {
+    text-decoration: underline;
+    background-color: rgba(217, 61, 61, 1);
+    color: white;
+}
+
+.topnav .icon {
+    display: none;
+    border-radius: 50%;
+}
+
+@media screen and (max-width: 600px) {
+    .topnav a:not(:first-child) {
+        display: none;
+    }
+
+    .topnav a.icon {
+        float: right;
+        display: block;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .topnav.responsive {
+        position: relative;
+    }
+
+    .topnav.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+}
+
+
+@media screen and (min-width: 1150px) {
+    .topnav a {
+        font-size: 105%;
+    }
+}
+
+@media screen and (min-width: 1620px) {
+    .topnav a {
+        font-weight: bold;
+        font-size: 130%;
+    }
+}
+
+/* Main section */
+
+body {
+    background: url(/images/MainBackround/pngtree-science-or-technology-background-with-dynamic-particles-trendy-colorful-design-template-image_406781\ [problembo.com].jpg);
+    /* Путь к картинке */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+main {
+    margin-left: 0;
+    padding-left: 0;
+    padding-right: 0;
+    margin-right: 0;
+}
+
+.main {
+    display: flex;
+    flex-direction: row;
+    color: bisque;
+
+}
+
+.text_blok_1 {
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+    background-color: rgb(55, 66, 76);
+    display: flex;
+    padding-left: 0.5em;
+    padding-bottom: 3em;
+}
+
+.head_blok {
+    display: flex;
+    justify-content: center;
+    font-size: 2em;
+    margin-top: 0.89em;
+    margin-bottom: 0.7em;
+}
+
+.first_image {
+    display: flex;
+    justify-content: center;
+
+}
+
+.first_image>img {
+    border-radius: 7%;
+
+}
+
+
+.text__1 {
+    font-size: 1.5em;
+    margin-top: 1.25em;
+    margin-left: 0.5rem;
+}
+
+.text__2 {
+    margin-top: 1.25em;
+}
+
+.text__3 {
+
+    margin-top: 1.25em;
+    margin-bottom: 1.25em;
+}
+
+
+.other {
+    width: 15%;
+    background-color: rgb(90, 75, 97);
+    display: flex;
+    padding-left: 0.5em;
+}
+
+.head_blok_other {
+    display: flex;
+    justify-content: center;
+    font-size: 1.5em;
+    margin-top: 0.89em;
+}
+
+
+.other_li {
+    margin-top: 1em;
+}
+
+.other_a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.05em;
+}
+
+/*  */
+.button_cont {
+    padding-top: 1em;
+    padding-left: 1em;
+    font-size: 1.3em;
+}
+
+span {
+    color: bisque;
+    text-decoration: none;
+}
+
+span:hover {
+    color: rgb(50, 138, 205);
+    transform: scale(1.1);
+}
+
+
+example_f {
+    border-radius: 4px;
+    background: linear-gradient(to right, #67b26b, #4ca2cb) !important;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 22px;
+    padding: 20px;
+    width: 200px;
+    transition: all 0.4s;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.example_f span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.4s;
+}
+
+.example_f span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.example_f:hover span {
+    padding-right: 25px;
+}
+
+.example_f:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+/*  */
+
+
+
+
+@media screen and (max-width: 600px) {
+    .main {
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .text_blok_1 {
+        height: 100%;
+        width: 100%;
+    }
+
+    .other {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 780px) {
+    .first_image>img {
+        width: 550px;
+    }
+}
+
+@media screen and (max-width: 560px) {
+    .first_image>img {
+        width: 300px;
+    }
+}
+
+
+/* Footer */
+
+
+footer {
+    background-color: #262626;
+}
+
+
+.footer {
+    font-size: 1em;
+    color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    margin-left: 1em;
+    font-size: 0.8em;
+
+}
+
+.foot__1 {
+    flex-grow: 1;
+    font-size: 1em;
+}
+
+.foot__2 {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    flex-grow: 1;
+    border-right: solid;
+    border-left: solid;
+    border-color: #fff;
+    font-size: 1.5em;
+}
+
+.foot__ico>img {
+    cursor: pointer;
+}
+
+.foot__ico1:hover {
+    transform: scale(1.1);
+}
+
+.foot__ico2:hover {
+    transform: scale(1.1);
+}
+
+.foot__ico3:hover {
+    transform: scale(1.1);
+}
+
+.foot__3 {
+    flex-grow: 1;
+    font-size: 1em;
+}
+
+
+.foot__mark {
+    background-color: rgb(255, 255, 255);
+    border-radius: 11%;
+    cursor: pointer;
+}
+
+.foot_mail {
+    cursor: pointer;
+
+}
+
+
+
+.foot_mail:hover {
+    color: aqua;
+    cursor: pointer;
+}
+
+.foot__img {
+    height: 1em;
+    width: 1em;
+}
+
+.foot__ico>img {
+    height: 2.5em;
+    width: 2.5em;
+}
+
+.foot__pry {
+    display: flex;
+    justify-content: center;
+}
+
+.foot__pry_1 {
+    display: flex;
+    justify-content: center;
+}
+
+.foot__pry>p {
+    width: 27vh;
+}
+
+@media screen and (max-width: 600px) {
+    .footer {
+        flex-direction: column;
+        align-items: center;
+        font-size: 0.9em;
+    }
+
+    .foot__2 {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border-top: solid;
+        border-bottom: solid;
+        border-right: none;
+        border-left: none;
+        border-color: #fff;
+        border-color: #fff;
+    }
+
+}
